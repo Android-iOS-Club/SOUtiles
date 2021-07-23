@@ -1,0 +1,22 @@
+{
+  "name": "SOUtiles",
+  "version": "0.1.0",
+  "summary": "A short description of SOUtiles.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/1548742234@qq.com/SOUtiles",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1548742234@qq.com": "aaksharker@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/1548742234@qq.com/SOUtiles.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SOUtiles/Classes/**/*"
+}

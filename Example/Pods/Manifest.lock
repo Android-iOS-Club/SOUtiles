@@ -1,0 +1,16 @@
+PODS:
+  - SOUtiles (0.1.0)
+
+DEPENDENCIES:
+  - SOUtiles (from `../`)
+
+EXTERNAL SOURCES:
+  SOUtiles:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SOUtiles: 46284e85d51822db1996d76c1774b9df4a248231
+
+PODFILE CHECKSUM: 28606c98f0a4875f56f88ea7beab1f2a11625c75
+
+COCOAPODS: 1.10.0
