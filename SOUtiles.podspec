@@ -21,22 +21,29 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/1548742234@qq.com/SOUtiles'
+  s.homepage         = 'https://github.com/Android-iOS-Club/SOUtiles'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1548742234@qq.com' => 'aaksharker@gmail.com' }
-  s.source           = { :git => 'https://github.com/1548742234@qq.com/SOUtiles.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/Android-iOS-Club/SOUtiles.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SOUtiles/Classes/**/*'
+  s.subspec 'Category' do |ss1|
+        ss1.source_files = 'SOUtiles/Classes/Category/*.{h,m}'
+    end
   
-  # s.resource_bundles = {
-  #   'SOUtiles' => ['SOUtiles/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Model' do |ss2|
+        ss2.source_files = 'SOUtiles/Classes/Model/*.{h,m}'
+    end
+  
+  s.subspec 'Network' do |ss3|
+        ss3.source_files = 'SOUtiles/Classes/Network/*.{h,m}'
+        ss3.dependency 'AFNetworking', '~> 3.2.1'
+    end
+  
+  s.subspec 'UI' do |ss4|
+        ss4.source_files = 'SOUtiles/Classes/UI/*.{h,m}'
+    end
+  
 end
